@@ -1,0 +1,493 @@
+/* Design System & Variáveis Globais */
+:root {
+    --color-bg-body: #f1f5f9;
+    --color-bg-surface: #ffffff;
+    --color-text-main: #1e293b;
+    --color-text-muted: #64748b;
+    --color-primary: #0284c7;
+    --color-primary-hover: #0369a1;
+    --color-border: #e2e8f0;
+    
+    --color-badge-bg: #e0f2fe;
+    --color-badge-border: #bae6fd;
+    
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+    --shadow-lg: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+    
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Variáveis Modo Escuro */
+body.dark-theme {
+    --color-bg-body: #050505;
+    --color-bg-surface: #2b3138;
+    --color-text-main: #f8fafc;
+    --color-text-muted: #94a3b8;
+    --color-primary: #38bdf8;
+    --color-primary-hover: #7dd3fc;
+    --color-border: #334155;
+    
+    --color-badge-bg: #0c4a6e;
+    --color-badge-border: #0284c7;
+}
+
+/* Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--color-bg-body);
+    color: var(--color-text-main);
+    line-height: 1.6;
+    padding: 2rem 1rem;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--color-bg-surface);
+    padding: 3rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 10;
+}
+
+/* Transparência no Modo Escuro para o fundo 3D brilhar */
+body.dark-theme .container {
+    background: rgba(30, 35, 42, 0.85); /* Tom mais escuro e transparente */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Botão de Tema Integrado ao Cabeçalho */
+.theme-toggle-wrapper {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 10;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+#dark-mode-toggle,
+#lang-toggle {
+    cursor: pointer;
+    font-family: inherit;
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    transition: var(--transition);
+    backdrop-filter: blur(4px);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+#dark-mode-toggle:hover,
+#lang-toggle:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-1px);
+}
+
+#lang-toggle {
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+/* Header & Perfil (Cor de Ardósia) */
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: #3b475a; 
+    padding: 3rem;
+    margin: -3rem -3rem 2.5rem -3rem; 
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    border-bottom: none;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-theme .profile-header {
+    background-color: rgba(59, 71, 90, 0.75); /* Transparente no modo escuro */
+    backdrop-filter: blur(12px);
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: var(--shadow-md);
+    border: 3px solid rgba(255, 255, 255, 0.15); 
+}
+
+.titles h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #ffffff; 
+}
+
+.titles .role {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #bae6fd; 
+    margin-top: 0.25rem;
+}
+
+/* Badges de Contato */
+.contact-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.profile-header .badge {
+    background: var(--color-primary); 
+    color: #ffffff;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600; 
+    border: 1px solid transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    transition: var(--transition);
+}
+
+.profile-header .badge.link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Efeito Glow (Brilho) nos Botões de Contato */
+.profile-header .badge.link:hover {
+    background: var(--color-primary-hover); 
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 15px var(--color-primary); 
+}
+
+.profile-header .badge.highlight {
+    background: #0ea5e9; /* Uma cor de destaque levemente diferente, se desejar */
+}
+
+/* Tipografia de Seções */
+.section-block {
+    margin-bottom: 2.5rem;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-text-main);
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.section-title::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--color-border);
+}
+
+.summary-text {
+    color: var(--color-text-muted);
+    font-size: 1rem;
+}
+
+/* Timeline (Formação) */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.timeline-item {
+    border-left: 2px solid var(--color-border);
+    padding-left: 1rem;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-primary);
+}
+
+.timeline-item h4 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.timeline-item p {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    margin: 0.2rem 0;
+}
+
+.timeline-item .date {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--color-primary);
+}
+
+/* Skills */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.skills-list li {
+    background: var(--color-bg-body);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text-main);
+    border: 1px solid var(--color-border);
+}
+
+/* Grids (Projetos e Certificados) */
+.projects-grid, .certs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+}
+
+.project-card, .cert-card {
+    background: var(--color-bg-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: 1.25rem;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card::after, .cert-card::after {
+    content: "→";
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    opacity: 0.5;
+    transition: var(--transition);
+    flex-shrink: 0;
+}
+
+/* Efeito Glow nos Cards de Projetos e Certificados */
+.project-card:hover, .cert-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.project-card:hover::after, .cert-card:hover::after {
+    opacity: 1;
+    transform: translateX(4px);
+}
+
+.project-card h4, .cert-card h4 {
+    font-size: 1rem;
+    color: var(--color-text-main);
+    margin-bottom: 0.25rem;
+}
+
+.project-card p, .cert-card p {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+}
+
+/* Sistema de Modais */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.active {
+    display: flex;
+    opacity: 1;
+    animation: fadeIn 0.2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.98); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.modal-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 300;
+    cursor: pointer;
+    line-height: 1;
+    transition: var(--transition);
+}
+
+.modal-close:hover { color: #cbd5e1; }
+
+.modal-img {
+    max-width: 90vw;
+    max-height: 80vh;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+}
+
+.modal-caption {
+    position: absolute;
+    bottom: 2rem;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.modal-content {
+    background: var(--color-bg-surface);
+    width: 100%;
+    max-width: 650px;
+    max-height: 85vh;
+    overflow-y: auto;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    color: var(--color-text-main);
+}
+
+.social-post { padding: 1.5rem; }
+.post-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+.post-avatar { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; }
+.post-meta { display: flex; flex-direction: column; }
+.post-meta strong { font-size: 0.95rem; }
+.post-meta span { font-size: 0.85rem; color: var(--color-text-muted); }
+.post-body p { font-size: 0.95rem; margin-bottom: 0.75rem; }
+.post-gallery { display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem; }
+.post-gallery img { width: 100%; border-radius: var(--radius-md); border: 1px solid var(--color-border); }
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-border);
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+}
+
+/* =========================================
+   NOVAS ADIÇÕES: 3D e Animações
+   ========================================= */
+
+/* Fundo 3D */
+#bg-canvas {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100vw; 
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none; /* Permite clicar através do canvas */
+}
+
+/* Efeito Scroll Reveal (Surgir ao Rolar) */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsividade */
+@media (max-width: 640px) {
+    body { padding: 0; }
+    
+    .container {
+        padding: 2rem 1.5rem;
+        border-radius: 0;
+        box-shadow: none;
+        min-height: 100vh;
+        border: none !important;
+    }
+
+    .profile-header {
+        margin: -2rem -1.5rem 2rem -1.5rem;
+        padding: 2.5rem 1.5rem 2rem 1.5rem;
+        border-radius: 0;
+    }
+
+    .profile-info {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .titles h1 { font-size: 1.6rem; }
+
+    .contact-badges {
+        justify-content: center;
+        gap: 0.6rem;
+    }
+
+    .projects-grid, .certs-grid {
+        grid-template-columns: 1fr;
+    }
+}

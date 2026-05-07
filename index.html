@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Oliveira | Desenvolvedor Full Stack</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="container">
+        <div class="theme-toggle-wrapper">
+            <button id="lang-toggle" class="badge link" aria-label="Switch Language">🌐 <span id="lang-label">EN</span></button>
+            <button id="dark-mode-toggle" class="badge link" aria-label="Alternar Tema">🌓 <span data-i18n="theme">Alternar Tema</span></button>
+        </div>
+
+        <header class="profile-header">
+            <div class="profile-info">
+                <img src="Img/My_face.jpeg" class="avatar" alt="Miguel Oliveira">
+                <div class="titles">
+                    <h1>Miguel Oliveira De Almeida</h1>
+                    <h2 class="role" data-i18n="role">Desenvolvedor Full Stack</h2>
+                </div>
+            </div>
+            <div class="contact-badges">
+                <span class="badge"><span data-i18n="location">📍 Taubaté, SP</span></span>
+                <a href="mailto:oliveiramiguel1003@gmail.com" class="badge link" data-i18n="email">📧 E-Mail</a>
+                <a href="https://wa.me/5512988327726" target="_blank" class="badge link">📞 WhatsApp</a>
+                <a href="https://www.linkedin.com/in/miguel-o-07203b3b1" target="_blank" class="badge link">🔗 LinkedIn</a>
+                <a href="https://github.com/Miguelsenai2024" target="_blank" class="badge link">📂 GitHub</a>
+                <a href="https://www.instagram.com/miguel_oliveira_dev" target="_blank" class="badge link">📸 Instagram</a>
+                <a href="Img/Currículo-Organizado.pdf" download="Curriculo_Miguel_Oliveira.pdf" class="badge link highlight" data-i18n="download">📄 Baixar Currículo</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="section-block reveal">
+                <h3 class="section-title" data-i18n="aboutTitle">Sobre Mim</h3>
+                <p class="summary-text" data-i18n="aboutText">
+                    Estudante de Análise e Desenvolvimento de Sistemas com sólida base técnica pelo SENAI Taubaté. Busco minha primeira oportunidade como estagiário na área de tecnologia, visando aplicar meus conhecimentos em lógica de programação e desenvolvimento de software para agregar valor aos projetos da empresa e evoluir profissionalmente.
+                </p>
+            </section>
+
+
+
+
+            <section class="section-block reveal">
+                <h3 class="section-title" data-i18n="projectsTitle">Projetos em Destaque</h3>
+                <div class="projects-grid">
+                    <div class="project-card" onclick="modalManager.open('modal-projeto')">
+                        <div class="project-content">
+                            <h4>E-Motors</h4>
+                            <p data-i18n="emotorsTag">Plataforma de e-commerce automotivo</p>
+                        </div>
+                    </div>
+                    <div class="project-card" onclick="modalManager.open('modal-realimenta')">
+                        <div class="project-content">
+                            <h4>ReAlimenta</h4>
+                            <p data-i18n="realimentaTag">App de combate ao desperdício alimentar</p>
+                        </div>
+                    </div>
+                    <div class="project-card" onclick="modalManager.open('modal-gsplan')">
+                        <div class="project-content">
+                            <h4>GSPlan</h4>
+                            <p data-i18n="gsplanTag">Plataforma de gestão patrimonial (Wealth Management)</p>
+                        </div>
+                    </div>
+                    <div class="project-card" onclick="modalManager.open('modal-scopemaster')">
+                        <div class="project-content">
+                            <h4>ScopeMaster</h4>
+                            <p data-i18n="scopemasterTag">Sistema de gerenciamento de requisitos (Projeto Integrador)</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-block reveal">
+                <h3 class="section-title" data-i18n="educationTitle">Formação Acadêmica</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Senai Taubaté</h4>
+                        <p data-i18n="edu1">Ensino Superior em Análise e Desenvolvimento de Sistemas</p>
+                        <span class="date">2026 – 2027</span>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Senai Taubaté</h4>
+                        <p data-i18n="edu2">Curso Técnico de Análise e Desenvolvimento de Sistemas</p>
+                        <span class="date">2023 – 2025</span>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Sesi 411 Taubaté</h4>
+                        <p data-i18n="edu3">Ensino Médio</p>
+                        <span class="date">2022 – 2025</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-block reveal">
+                <h3 class="section-title" data-i18n="skillsTitle">Tech Stack & Soft Skills</h3>
+                <ul class="skills-list">
+                    <li>Python</li>
+                    <li data-i18n="skill1">Lógica de Sistemas</li>
+                    <li>JavaScript</li>
+                    <li data-i18n="skill2">Trabalho em Equipe</li>
+                    <li data-i18n="skill3">Aprendizagem Contínua</li>
+                </ul>
+            </section>
+
+            <section class="section-block reveal">
+                <h3 class="section-title" data-i18n="certsTitle">Certificações</h3>
+                <div id="certificados-grid" class="certs-grid">
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p data-i18n="footer">&copy; 2026 | Desenvolvido por Miguel Oliveira</p>
+        </footer>
+    </div>
+
+    <div id="modal-certificado" class="modal">
+        <div class="modal-close" onclick="modalManager.close('modal-certificado')">&times;</div>
+        <img class="modal-img" id="img-certificado" alt="Certificado">
+        <div id="legenda-certificado" class="modal-caption"></div>
+    </div>
+
+    <div id="modal-projeto" class="modal">
+        <div class="modal-close" onclick="modalManager.close('modal-projeto')">&times;</div>
+        <div class="modal-content">
+            <div class="social-post">
+                <div class="post-header">
+                    <img src="Img/My_face.jpeg" class="post-avatar" alt="Avatar">
+                    <div class="post-meta">
+                        <strong>Miguel Oliveira De Almeida</strong>
+                        <span data-i18n="role">Desenvolvedor Full Stack</span>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <p data-i18n="emotorsP1">Este projeto é uma plataforma web de vendas de motocicletas criada para uma apresentação em sala de aula. Ele simula um mercado digital real, onde os usuários podem facilmente navegar por diferentes motocicletas, ver seus detalhes e interagir com os anúncios.</p>
+                    <p data-i18n="emotorsP2"><strong>Stack:</strong> Construído usando tecnologias front-end modernas (HTML, CSS e JavaScript), projetado para alta performance e excelente usabilidade.</p>
+                </div>
+                <div class="post-gallery">
+                    <img src="Img/e-motors/img1.jpg" loading="lazy" alt="Projeto E-Motors">
+                    <img src="Img/e-motors/img2.jpg" loading="lazy" alt="Veículos">
+                    <img src="Img/e-motors/carrinho.jpg" loading="lazy" alt="Carrinho">
+                    <img src="Img/e-motors/equipe.jpg" loading="lazy" alt="Equipe">
+                    <img src="Img/e-motors/codaleatorio.png" loading="lazy" alt="Code Snippet">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-realimenta" class="modal">
+        <div class="modal-close" onclick="modalManager.close('modal-realimenta')">&times;</div>
+        <div class="modal-content">
+            <div class="social-post">
+                <div class="post-header">
+                    <img src="Img/My_face.jpeg" class="post-avatar" alt="Avatar">
+                    <div class="post-meta">
+                        <strong>Miguel Oliveira De Almeida</strong>
+                        <span data-i18n="role">Desenvolvedor Full Stack</span>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <p data-i18n="realimentaP1">O <strong>ReAlimenta</strong> é um projeto de extensão focado no combate à insegurança alimentar. A plataforma atua como uma ponte entre instituições com excedente de alimentos e ONGs cadastradas, otimizando a logística de doações.</p>
+                    <p data-i18n="realimentaP2">O foco principal foi a criação de uma interface intuitiva para democratizar o acesso, permitindo cadastros rápidos e gestão visual de doações.</p>
+                    <p data-i18n="realimentaP3"><strong>Stack:</strong> Desenvolvido com HTML5, CSS3 e JavaScript puro, priorizando acessibilidade e design responsivo.</p>
+                </div>
+                <div class="post-gallery">
+                    <img src="Img/ReAlimenta/loginRealimenta.png" loading="lazy" alt="Login">
+                    <img src="Img/ReAlimenta/inirealimenta1.png" loading="lazy" alt="Dashboard">
+                    <img src="Img/ReAlimenta/resultadoReAlimenta.png" loading="lazy" alt="Resultados">
+                    <img src="Img/ReAlimenta/codaleatorioReAlimenta.png" loading="lazy" alt="Code Snippet">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-gsplan" class="modal">
+        <div class="modal-close" onclick="modalManager.close('modal-gsplan')">&times;</div>
+        <div class="modal-content">
+            <div class="social-post">
+                <div class="post-header">
+                    <img src="Img/My_face.jpeg" class="post-avatar" alt="Avatar">
+                    <div class="post-meta">
+                        <strong>Miguel Oliveira De Almeida</strong>
+                        <span data-i18n="role">Desenvolvedor Full Stack</span>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <p data-i18n="gsplanP1">O <strong>GSPlan</strong> é uma plataforma de <em>Wealth Management</em> (Gestão Patrimonial) que conecta assessores de elite à jornada patrimonial completa de seus clientes. O sistema oferece visão 360° do patrimônio em tempo real, com foco em segurança de nível bancário.</p>
+                    <p data-i18n="gsplanP2">A interface inclui tela de login profissional com indicadores em destaque (AUM Gerenciado, Clientes Ativos, Retorno Médio) e um <strong>Dashboard Executivo</strong> chamado "Bússola" — visão patrimonial com cards de Patrimônio Líquido, Reserva de Emergência, Rentabilidade YTD, Drawdown Máximo, Metas no Prazo, Alocação Patrimonial por classe de ativo e Atividade Recente.</p>
+                    <p data-i18n="gsplanP3"><strong>Funcionalidades:</strong> autenticação multifator, criptografia ponta a ponta, gerenciamento de múltiplos clientes, conexão de contas externas, planejamento de metas (Futuro) e visualização de carteira de ativos.</p>
+                    <p data-i18n="gsplanP4"><strong>Stack:</strong> Front-end moderno com tema escuro elegante (paleta verde/teal), design responsivo e arquitetura focada em UX para o setor financeiro.</p>
+                </div>
+                <div class="post-gallery">
+                    <img src="Img/GSPlan/login.png" loading="lazy" alt="GSPlan - Tela de Login">
+                    <img src="Img/GSPlan/dashboard.png" loading="lazy" alt="GSPlan - Dashboard Bússola">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-scopemaster" class="modal">
+        <div class="modal-close" onclick="modalManager.close('modal-scopemaster')">&times;</div>
+        <div class="modal-content">
+            <div class="social-post">
+                <div class="post-header">
+                    <img src="Img/My_face.jpeg" class="post-avatar" alt="Avatar">
+                    <div class="post-meta">
+                        <strong>Miguel Oliveira De Almeida</strong>
+                        <span data-i18n="role">Desenvolvedor Full Stack</span>
+                    </div>
+                </div>
+                <div class="post-body">
+                    <p data-i18n="scopeP1">O <strong>ScopeMaster</strong> é meu <strong>Projeto Integrador</strong> — um sistema completo de <em>Gerenciamento de Requisitos</em> voltado para análise, aprovação e acompanhamento de propostas de software dentro de empresas e equipes de desenvolvimento.</p>
+                    <p data-i18n="scopeP2">A plataforma possui tela de login minimalista e um <strong>Painel Geral</strong> com KPIs em tempo real: Total de Requisitos, Aprovados, Pendentes e Rejeitados. Inclui módulos de <strong>Painel de Propostas, Fluxo de Ideias, Projetos Aprovados, Métricas de Aprovação</strong> e <strong>Autorização de Usuários</strong>.</p>
+                    <p data-i18n="scopeP3"><strong>Funcionalidades:</strong> classificação de requisitos (Funcional / Não Funcional), workflow de aprovação, vinculação a projetos (Sistema de Estoque, App de Entregas, Portal RH, E-commerce, CRM), barras de progresso por projeto e busca global.</p>
+                    <p data-i18n="scopeP4"><strong>Stack:</strong> Aplicação full-stack com tema escuro profissional, foco em produtividade do administrador e rastreabilidade de decisões — desenvolvida como entrega final do curso técnico no SENAI.</p>
+                </div>
+                <div class="post-gallery">
+                    <img src="Img/ScopeMaster/login.png" loading="lazy" alt="ScopeMaster - Tela de Login">
+                    <img src="Img/ScopeMaster/painel.png" loading="lazy" alt="ScopeMaster - Painel Geral">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
