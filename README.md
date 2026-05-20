@@ -31,7 +31,7 @@ Este portfólio é uma aplicação web responsiva e interativa, com alternância
 
 O projeto está hospedado e disponível online:
 
-👉 **[Acessar o Portfólio (Vercel)]([https://curriculo-psi-liard.vercel.app/](https://curriculo-ten-hazel.vercel.app/))**
+👉 **[Acessar o Portfólio (Vercel)](https://curriculo-ten-hazel.vercel.app/)**
 
 ---
 *Desenvolvido com 💙 por [Miguel Oliveira](https://github.com/Miguelsenai2024).*
