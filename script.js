@@ -31,6 +31,36 @@ const certificadosData = [
         instituicao: "Cisco Networking Academy",
         ano: "2026",
         imagem: "Img/Começando_com_cisco_certiicado.png"
+    },
+    {
+        titulo: { 'pt-BR': "Acessibilidade em HTML, CSS e JavaScript: avaliando e melhorando um projeto com o NVDA", 'en': "Accessibility in HTML, CSS and JavaScript: evaluating and improving a project with NVDA" },
+        instituicao: "Alura",
+        ano: "2026",
+        imagem: "Img/MiguelOA_26179933_Junho2.pdf"
+    },
+    {
+        titulo: { 'pt-BR': "Clojure: Mutabilidade com Átomos e Refs", 'en': "Clojure: Mutability with Atoms and Refs" },
+        instituicao: "Alura",
+        ano: "2026",
+        imagem: "Img/MiguelOA_26179933_Maio.pdf"
+    },
+    {
+        titulo: { 'pt-BR': "Introdução à IA Moderna", 'en': "Introduction to Modern AI" },
+        instituicao: "Cisco Networking Academy",
+        ano: "2026",
+        imagem: "Img/MiguelOA_26179933_Junho.pdf"
+    },
+    {
+        titulo: { 'pt-BR': "Linux Unhatched", 'en': "Linux Unhatched" },
+        instituicao: "Cisco Networking Academy",
+        ano: "2026",
+        imagem: "Img/LinuxUnhatchedUpdate20260603-31-flkra1.pdf"
+    },
+    {
+        titulo: { 'pt-BR': "Fundamentos de Análise de Dados", 'en': "Data Analytics Essentials" },
+        instituicao: "Cisco Networking Academy",
+        ano: "2026",
+        imagem: "Img/DataAnalyticsEssentialsUpdate20260531-31-rj9b4k.pdf"
     }
 ];
 
@@ -201,12 +231,27 @@ const modalManager = {
  * Handler específico para setup da visualização de imagem do certificado
  */
 const renderCertificadoModal = (src, title) => {
-    const imgElement = document.getElementById('img-certificado');
+    const wrapper = document.getElementById('cert-content-wrapper');
     const captionElement = document.getElementById('legenda-certificado');
 
-    if (imgElement && captionElement) {
-        imgElement.src = src;
-        imgElement.alt = title;
+    if (wrapper && captionElement) {
+        wrapper.innerHTML = '';
+        const isPdf = src.toLowerCase().endsWith('.pdf');
+
+        if (isPdf) {
+            const iframe = document.createElement('iframe');
+            iframe.src = src;
+            iframe.className = 'modal-pdf';
+            iframe.title = title;
+            wrapper.appendChild(iframe);
+        } else {
+            const img = document.createElement('img');
+            img.src = src;
+            img.alt = title;
+            img.className = 'modal-img';
+            wrapper.appendChild(img);
+        }
+
         captionElement.textContent = title;
         modalManager.open('modal-certificado');
     }
