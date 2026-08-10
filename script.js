@@ -203,8 +203,9 @@ const renderCertificados = () => {
 
     container.innerHTML = certificadosData.map((certificado, index) => {
         const titulo = certificado.titulo[currentLang] || certificado.titulo["pt-BR"];
+        const delay = (index % 4) * 60;
         return `
-            <button class="cert-card reveal is-visible" type="button" data-cert-index="${index}">
+            <button class="cert-card reveal" data-delay="${delay}" type="button" data-cert-index="${index}">
                 <span class="cert-number">${String(index + 1).padStart(2, "0")}</span>
                 <span class="cert-copy">
                     <h3>${titulo}</h3>
@@ -235,6 +236,7 @@ const applyTranslations = () => {
         ? "Miguel Oliveira — Desenvolvedor Full Stack"
         : "Miguel Oliveira — Full Stack Developer";
     renderCertificados();
+    initReveal();
     refreshIcons();
 };
 
@@ -349,24 +351,33 @@ const initMobileMenu = () => {
     });
 };
 
+let revealObserver = null;
+
 const initReveal = () => {
-    const elements = document.querySelectorAll(".reveal:not(.is-visible)");
+    if (revealObserver) {
+        revealObserver.disconnect();
+    }
+
+    const elements = document.querySelectorAll(".reveal");
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
         elements.forEach((element) => element.classList.add("is-visible"));
         return;
     }
 
-    const observer = new IntersectionObserver((entries) => {
+    revealObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
-            if (!entry.isIntersecting) return;
-            const delay = Number(entry.target.dataset.delay || 0);
-            entry.target.style.setProperty("--delay", `${delay}ms`);
-            entry.target.classList.add("is-visible");
-            observer.unobserve(entry.target);
+            if (entry.isIntersecting) {
+                const delay = Number(entry.target.dataset.delay || 0);
+                entry.target.style.setProperty("--delay", `${delay}ms`);
+                entry.target.classList.add("is-visible");
+            } else {
+                entry.target.style.setProperty("--delay", "0ms");
+                entry.target.classList.remove("is-visible");
+            }
         });
-    }, { threshold: 0.12, rootMargin: "0px 0px -40px" });
+    }, { threshold: 0.1, rootMargin: "0px 0px -20px" });
 
-    elements.forEach((element) => observer.observe(element));
+    elements.forEach((element) => revealObserver.observe(element));
 };
 
 const initBackTop = () => {
@@ -390,4 +401,3 @@ document.addEventListener("DOMContentLoaded", () => {
     initBackTop();
     refreshIcons();
 });
-
