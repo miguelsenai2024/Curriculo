@@ -4,33 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfólio de Miguel Oliveira, desenvolvedor Full Stack. Projetos web, formação e certificações.">
-    <meta name="theme-color" content="#08090d">
+    <meta name="theme-color" content="#111417">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Miguel Oliveira — Desenvolvedor Full Stack">
     <meta property="og:description" content="Projetos web, formação e certificações de Miguel Oliveira.">
-    <meta property="og:image" content="https://curriculo-ten-hazel.vercel.app/Img/og.png">
+    <meta property="og:image" content="https://miguel-oliveira-portfolio.oliveiramiguel1003.chatgpt.site/Img/og-human.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Miguel Oliveira — Desenvolvedor Full Stack">
     <meta name="twitter:description" content="Projetos web, formação e certificações de Miguel Oliveira.">
-    <meta name="twitter:image" content="https://curriculo-ten-hazel.vercel.app/Img/og.png">
+    <meta name="twitter:image" content="https://miguel-oliveira-portfolio.oliveiramiguel1003.chatgpt.site/Img/og-human.png">
     <title>Miguel Oliveira — Desenvolvedor Full Stack</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <a class="skip-link" href="#conteudo" data-i18n="skipLink">Ir para o conteúdo</a>
-    <canvas id="bg-canvas" aria-hidden="true"></canvas>
-    <div class="ambient ambient-one" aria-hidden="true"></div>
-    <div class="ambient ambient-two" aria-hidden="true"></div>
-    <div class="noise" aria-hidden="true"></div>
-
     <header class="site-header" id="inicio">
         <a class="brand" href="#inicio" aria-label="Miguel Oliveira — início">
             <span class="brand-mark">MO</span>
-            <span class="brand-copy">Miguel<span>.dev</span></span>
+            <span class="brand-copy">Miguel Oliveira</span>
         </a>
 
         <nav class="desktop-nav" aria-label="Navegação principal">
@@ -72,82 +67,49 @@
                     <span class="status-dot"></span>
                     <span data-i18n="availability">Disponível a oportunidades</span>
                 </div>
-                <p class="hero-kicker" data-i18n="hello">Olá, eu sou o Miguel.</p>
+                <p class="hero-kicker" data-i18n="hello">Oi, eu sou o Miguel.</p>
                 <h1 id="hero-title">
-                    <span data-i18n="heroLine1">Transformo ideias em</span>
-                    <span class="gradient-text" data-i18n="heroLine2">experiências digitais.</span>
+                    <span data-i18n="heroLine1">Aprendo construindo.</span>
+                    <span class="gradient-text" data-i18n="heroLine2">E gosto de construir bem.</span>
                 </h1>
-                <p class="hero-description" data-i18n="heroDescription">Desenvolvedor Full Stack e estudante de Análise e Desenvolvimento de Sistemas, criando produtos web funcionais, intuitivos e visualmente marcantes.</p>
+                <p class="hero-description" data-i18n="heroDescription">Sou estudante de Análise e Desenvolvimento de Sistemas no SENAI, em Taubaté. Este portfólio reúne os projetos que venho criando para aprender front-end, back-end e resolver problemas na prática.</p>
                 <div class="hero-cta">
                     <a class="button button-primary" href="#projetos">
                         <span data-i18n="viewProjects">Ver meus projetos</span>
                         <i data-lucide="arrow-down-right"></i>
                     </a>
-                    <a class="button button-ghost" href="mailto:oliveiramiguel1003@gmail.com">
+                    <a class="button button-ghost" href="#contato">
                         <span data-i18n="talkToMe">Fale comigo</span>
                         <i data-lucide="send"></i>
                     </a>
                 </div>
-                <div class="hero-stats" aria-label="Resumo profissional">
-                    <div><strong>05+</strong><span data-i18n="projectsBuilt">projetos construídos</span></div>
-                    <div><strong>10</strong><span data-i18n="certificates">certificações</span></div>
-                    <div><strong>2027</strong><span data-i18n="graduation">formação prevista</span></div>
-                </div>
             </div>
 
             <div class="hero-visual reveal" data-delay="120">
-                <div class="profile-orbit" id="profile-orbit">
-                    <div class="orbit-ring ring-one"></div>
-                    <div class="orbit-ring ring-two"></div>
-                    <span class="orbit-tag tag-code">&lt;/code&gt;</span>
-                    <span class="orbit-tag tag-location">Taubaté · SP</span>
-                    <div class="profile-card">
-                        <div class="profile-glow"></div>
-                        <img src="Img/miha imagem.png" alt="Miguel Oliveira" fetchpriority="high">
-                        <div class="profile-caption">
-                            <span data-i18n="profileCaption">Código, produto &amp; design</span>
-                            <strong>Full Stack Developer</strong>
-                        </div>
-                    </div>
-                </div>
+                <figure class="portrait-card">
+                    <img src="Img/miha imagem.png" alt="Miguel Oliveira" fetchpriority="high">
+                    <figcaption>
+                        <span>Taubaté, SP</span>
+                        <strong data-i18n="roleCaption">Desenvolvedor Full Stack em formação</strong>
+                    </figcaption>
+                </figure>
             </div>
         </section>
-
-        <div class="tech-marquee" aria-label="Tecnologias">
-            <div class="marquee-track">
-                <span><i class="devicon-html5-plain"></i> HTML5</span>
-                <span><i class="devicon-css3-plain"></i> CSS3</span>
-                <span><i class="devicon-javascript-plain"></i> JavaScript</span>
-                <span><i class="devicon-python-plain"></i> Python</span>
-                <span><i class="devicon-flask-original"></i> Flask</span>
-                <span><i class="devicon-java-plain"></i> Java</span>
-                <span><i class="devicon-git-plain"></i> Git</span>
-                <span><i class="devicon-mysql-original"></i> SQL</span>
-                <span aria-hidden="true"><i class="devicon-html5-plain"></i> HTML5</span>
-                <span aria-hidden="true"><i class="devicon-css3-plain"></i> CSS3</span>
-                <span aria-hidden="true"><i class="devicon-javascript-plain"></i> JavaScript</span>
-                <span aria-hidden="true"><i class="devicon-python-plain"></i> Python</span>
-                <span aria-hidden="true"><i class="devicon-flask-original"></i> Flask</span>
-                <span aria-hidden="true"><i class="devicon-java-plain"></i> Java</span>
-                <span aria-hidden="true"><i class="devicon-git-plain"></i> Git</span>
-                <span aria-hidden="true"><i class="devicon-mysql-original"></i> SQL</span>
-            </div>
-        </div>
 
         <section class="about section-shell" id="sobre" aria-labelledby="about-title">
             <div class="section-heading reveal">
                 <span class="section-index">01</span>
                 <div>
                     <p class="overline" data-i18n="aboutOverline">Quem eu sou</p>
-                    <h2 id="about-title" data-i18n="aboutTitle">Curioso por natureza.<br>Desenvolvedor por escolha.</h2>
+                    <h2 id="about-title" data-i18n="aboutTitle">Um pouco sobre mim</h2>
                 </div>
             </div>
 
             <div class="about-grid">
                 <article class="about-story glass-card reveal">
-                    <div class="card-icon"><i data-lucide="sparkles"></i></div>
-                    <p class="about-lead" data-i18n="aboutLead">Gosto de transformar problemas complexos em interfaces simples, úteis e agradáveis de usar.</p>
-                    <p data-i18n="aboutText">Sou estudante de Análise e Desenvolvimento de Sistemas no SENAI Taubaté, com formação técnica na mesma área. Busco minha primeira oportunidade profissional para contribuir com projetos reais, aprender com uma equipe experiente e evoluir como desenvolvedor.</p>
+                    <div class="card-icon"><i data-lucide="user-round"></i></div>
+                    <p class="about-lead" data-i18n="aboutLead">Ainda estou no começo da carreira, então tento aproveitar cada projeto para aprender algo novo e melhorar o que já sei.</p>
+                    <p data-i18n="aboutText">Concluí o curso técnico de Análise e Desenvolvimento de Sistemas e hoje continuo a graduação no SENAI Taubaté. Gosto de colocar a mão na massa, entender o problema antes de programar e ver uma ideia ganhar forma na tela.</p>
                     <div class="mini-tags">
                         <span data-i18n="teamwork">Trabalho em equipe</span>
                         <span data-i18n="continuousLearning">Aprendizagem contínua</span>
@@ -182,16 +144,15 @@
                 <span class="section-index">02</span>
                 <div>
                     <p class="overline" data-i18n="projectsOverline">Trabalhos selecionados</p>
-                    <h2 id="projects-title" data-i18n="projectsTitle">Projetos que unem<br>ideia, código e propósito.</h2>
+                    <h2 id="projects-title" data-i18n="projectsTitle">Projetos que já tirei do papel</h2>
                 </div>
-                <p class="heading-note" data-i18n="projectsNote">Explore os detalhes ou abra os projetos publicados.</p>
+                <p class="heading-note" data-i18n="projectsNote">Cada um deles representa uma etapa diferente do meu aprendizado.</p>
             </div>
 
             <div class="featured-projects">
-                <article class="featured-project project-gsplan reveal" data-tilt>
+                <article class="featured-project project-gsplan reveal">
                     <div class="project-preview">
                         <img src="Img/GSPlan/apresentacao.png" alt="Apresentação do dashboard GSPlan em um notebook" loading="lazy">
-                        <span class="project-number">01</span>
                     </div>
                     <div class="project-info">
                         <div class="project-heading-row">
@@ -220,10 +181,9 @@
                     </div>
                 </article>
 
-                <article class="featured-project project-personal reveal" data-delay="100" data-tilt>
+                <article class="featured-project project-personal reveal" data-delay="100">
                     <div class="project-preview">
                         <img src="Img/PersonalHub/landing.png" alt="Página inicial da plataforma PersonalHub" loading="lazy">
-                        <span class="project-number">02</span>
                     </div>
                     <div class="project-info">
                         <div class="project-heading-row">
@@ -264,9 +224,9 @@
                     <div class="compact-overlay"><span>Impacto social</span><h3>ReAlimenta</h3><p data-i18n="realimentaTag">Tecnologia contra o desperdício alimentar</p></div>
                     <i data-lucide="arrow-up-right"></i>
                 </article>
-                <article class="compact-project reveal" data-delay="160" data-dialog="modal-emotors" tabindex="0" role="button" aria-label="Ver E-Motors">
-                    <img src="Img/e-motors/img1.jpg" alt="Página inicial do E-Motors" loading="lazy">
-                    <div class="compact-overlay"><span>E-commerce</span><h3>E-Motors</h3><p data-i18n="emotorsTag">Marketplace de motocicletas</p></div>
+                <article class="compact-project reveal" data-delay="160" data-dialog="modal-vyzor" tabindex="0" role="button" aria-label="Ver Vyzor">
+                    <img src="Img/Vyzor/dashboard.png" alt="Dashboard principal do Vyzor" loading="lazy">
+                    <div class="compact-overlay"><span>Analytics &amp; automação</span><h3>Vyzor</h3><p data-i18n="vyzorTag">Gestão de dados e indicadores empresariais</p></div>
                     <i data-lucide="arrow-up-right"></i>
                 </article>
             </div>
@@ -277,7 +237,7 @@
                 <span class="section-index">03</span>
                 <div>
                     <p class="overline" data-i18n="journeyOverline">Formação &amp; evolução</p>
-                    <h2 id="journey-title" data-i18n="journeyTitle">Construindo uma base<br>para ir cada vez mais longe.</h2>
+                    <h2 id="journey-title" data-i18n="journeyTitle">Minha formação até aqui</h2>
                 </div>
             </div>
             <div class="timeline">
@@ -304,7 +264,7 @@
                 <span class="section-index">04</span>
                 <div>
                     <p class="overline" data-i18n="certsOverline">Aprendizado contínuo</p>
-                    <h2 id="certs-title" data-i18n="certsTitle">Certificações que<br>ampliam meu repertório.</h2>
+                    <h2 id="certs-title" data-i18n="certsTitle">Cursos e certificações</h2>
                 </div>
                 <p class="heading-note" data-i18n="certsNote">Clique em um certificado para visualizar.</p>
             </div>
@@ -313,10 +273,9 @@
 
         <section class="contact section-shell reveal" id="contato" aria-labelledby="contact-title">
             <div class="contact-card">
-                <div class="contact-orb" aria-hidden="true"></div>
-                <p class="overline" data-i18n="contactOverline">Vamos construir algo juntos?</p>
-                <h2 id="contact-title" data-i18n="contactTitle">Uma boa ideia começa<br>com uma conversa.</h2>
-                <p data-i18n="contactText">Estou aberto a oportunidades de estágio, colaborações e novos desafios em desenvolvimento.</p>
+                <p class="overline" data-i18n="contactOverline">Contato</p>
+                <h2 id="contact-title" data-i18n="contactTitle">Quer conversar sobre uma vaga ou projeto?</h2>
+                <p data-i18n="contactText">Pode me chamar por e-mail ou por uma das redes abaixo. Vou gostar de conversar.</p>
                 <a class="contact-email" href="mailto:oliveiramiguel1003@gmail.com">oliveiramiguel1003@gmail.com <i data-lucide="arrow-up-right"></i></a>
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/miguel-o-07203b3b1" target="_blank" rel="noopener noreferrer">LinkedIn <i data-lucide="arrow-up-right"></i></a>
@@ -330,7 +289,7 @@
 
     <footer class="site-footer section-shell">
         <a class="brand" href="#inicio"><span class="brand-mark">MO</span></a>
-        <p data-i18n="footer">© 2026 Miguel Oliveira. Projetado e desenvolvido com atenção aos detalhes.</p>
+        <p data-i18n="footer">© 2026 Miguel Oliveira. Feito por mim, em Taubaté.</p>
         <a href="#inicio" class="back-top"><span data-i18n="backTop">Voltar ao topo</span><i data-lucide="arrow-up"></i></a>
     </footer>
 
@@ -395,18 +354,18 @@
         </div>
     </dialog>
 
-    <dialog class="project-dialog" id="modal-emotors" aria-labelledby="emotors-dialog-title">
+    <dialog class="project-dialog" id="modal-vyzor" aria-labelledby="vyzor-dialog-title">
         <button class="dialog-close" type="button" data-close-dialog aria-label="Fechar"><i data-lucide="x"></i></button>
         <div class="dialog-hero">
-            <span class="project-type">E-COMMERCE · MOTOCICLETAS</span>
-            <h2 id="emotors-dialog-title">E-Motors</h2>
-            <p data-i18n="emotorsDetail">Plataforma web de vendas de motocicletas que simula um marketplace digital. O usuário pode navegar pelo catálogo, consultar detalhes dos modelos e gerenciar itens em um carrinho responsivo.</p>
-            <div class="dialog-facts"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+            <span class="project-type">ANALYTICS · AUTOMAÇÃO · MULTI-TENANT</span>
+            <h2 id="vyzor-dialog-title">Vyzor</h2>
+            <p data-i18n="vyzorDetail">O Vyzor é uma plataforma de gestão e análise de dados empresariais. Ele reúne dashboards por área, indicadores, metas, relatórios, importação de dados e um assistente virtual. No back-end, o projeto trabalha com autenticação, isolamento de dados por cliente, tarefas agendadas e integrações externas.</p>
+            <div class="dialog-facts"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>Docker</span></div>
         </div>
         <div class="dialog-gallery">
-            <a href="Img/e-motors/img1.jpg" target="_blank"><img src="Img/e-motors/img1.jpg" alt="Página inicial do E-Motors" loading="lazy"></a>
-            <a href="Img/e-motors/img2.jpg" target="_blank"><img src="Img/e-motors/img2.jpg" alt="Catálogo E-Motors" loading="lazy"></a>
-            <a href="Img/e-motors/carrinho.jpg" target="_blank"><img src="Img/e-motors/carrinho.jpg" alt="Carrinho do E-Motors" loading="lazy"></a>
+            <a href="Img/Vyzor/dashboard.png" target="_blank"><img src="Img/Vyzor/dashboard.png" alt="Dashboard principal do Vyzor" loading="lazy"></a>
+            <a href="Img/Vyzor/vendas.png" target="_blank"><img src="Img/Vyzor/vendas.png" alt="Painel de vendas do Vyzor" loading="lazy"></a>
+            <a href="Img/Vyzor/assistente.png" target="_blank"><img src="Img/Vyzor/assistente.png" alt="Assistente virtual do Vyzor" loading="lazy"></a>
         </div>
     </dialog>
 

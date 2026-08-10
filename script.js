@@ -74,55 +74,56 @@ const translations = {
         navContact: "Contato",
         resume: "Currículo",
         availability: "Disponível a oportunidades",
-        hello: "Olá, eu sou o Miguel.",
-        heroLine1: "Transformo ideias em",
-        heroLine2: "experiências digitais.",
-        heroDescription: "Desenvolvedor Full Stack e estudante de Análise e Desenvolvimento de Sistemas, criando produtos web funcionais, intuitivos e visualmente marcantes.",
+        hello: "Oi, eu sou o Miguel.",
+        heroLine1: "Aprendo construindo.",
+        heroLine2: "E gosto de construir bem.",
+        heroDescription: "Sou estudante de Análise e Desenvolvimento de Sistemas no SENAI, em Taubaté. Este portfólio reúne os projetos que venho criando para aprender front-end, back-end e resolver problemas na prática.",
         viewProjects: "Ver meus projetos",
         talkToMe: "Fale comigo",
         projectsBuilt: "projetos construídos",
         certificates: "certificações",
         graduation: "formação prevista",
         profileCaption: "Código, produto &amp; design",
-        aboutOverline: "Quem eu sou",
-        aboutTitle: "Curioso por natureza.<br>Desenvolvedor por escolha.",
-        aboutLead: "Gosto de transformar problemas complexos em interfaces simples, úteis e agradáveis de usar.",
-        aboutText: "Sou estudante de Análise e Desenvolvimento de Sistemas no SENAI Taubaté, com formação técnica na mesma área. Busco minha primeira oportunidade profissional para contribuir com projetos reais, aprender com uma equipe experiente e evoluir como desenvolvedor.",
+        roleCaption: "Desenvolvedor Full Stack em formação",
+        aboutOverline: "Sobre mim",
+        aboutTitle: "Um pouco sobre mim",
+        aboutLead: "Ainda estou no começo da carreira, então tento aproveitar cada projeto para aprender algo novo e melhorar o que já sei.",
+        aboutText: "Concluí o curso técnico de Análise e Desenvolvimento de Sistemas e hoje continuo a graduação no SENAI Taubaté. Gosto de colocar a mão na massa, entender o problema antes de programar e ver uma ideia ganhar forma na tela.",
         teamwork: "Trabalho em equipe",
         continuousLearning: "Aprendizagem contínua",
         systemThinking: "Pensamento sistêmico",
         toolbox: "Minha caixa de ferramentas",
         stackTitle: "Tecnologias que uso",
-        projectsOverline: "Trabalhos selecionados",
-        projectsTitle: "Projetos que unem<br>ideia, código e propósito.",
-        projectsNote: "Explore os detalhes ou abra os projetos publicados.",
-        gsplanSummary: "Ecossistema de gestão financeira e patrimonial que reúne orçamento, planejamento, investimentos, seguros e visão executiva em uma experiência integrada.",
-        personalSummary: "Hub pessoal que centraliza finanças, rotina e estudos. A plataforma transforma informações dispersas em uma visão clara do dia, com foco, metas e próximos passos.",
+        projectsOverline: "O que eu já fiz",
+        projectsTitle: "Projetos que já tirei do papel",
+        projectsNote: "Cada um deles representa uma etapa diferente do meu aprendizado.",
+        gsplanSummary: "Projeto de gestão financeira e patrimonial com áreas para orçamento, planejamento, investimentos, seguros e acompanhamento do patrimônio.",
+        personalSummary: "Um painel pessoal para organizar dinheiro, estudos e rotina no mesmo lugar, sem precisar alternar entre várias ferramentas.",
         viewCase: "Ver projeto completo",
         visitSite: "Visitar site",
         scopeTag: "Gestão e rastreabilidade de requisitos",
         realimentaTag: "Tecnologia contra o desperdício alimentar",
-        emotorsTag: "Marketplace de motocicletas",
-        journeyOverline: "Formação &amp; evolução",
-        journeyTitle: "Construindo uma base<br>para ir cada vez mais longe.",
+        vyzorTag: "Gestão de dados e indicadores empresariais",
+        journeyOverline: "O que estudei",
+        journeyTitle: "Minha formação até aqui",
         inProgress: "Em andamento",
         completed: "Concluído",
         higherEducation: "Superior em Análise e Desenvolvimento de Sistemas",
         technicalEducation: "Técnico em Análise e Desenvolvimento de Sistemas",
         highSchool: "Ensino Médio",
-        certsOverline: "Aprendizado contínuo",
-        certsTitle: "Certificações que<br>ampliam meu repertório.",
+        certsOverline: "Outros estudos",
+        certsTitle: "Cursos e certificações",
         certsNote: "Clique em um certificado para visualizar.",
-        contactOverline: "Vamos construir algo juntos?",
-        contactTitle: "Uma boa ideia começa<br>com uma conversa.",
-        contactText: "Estou aberto a oportunidades de estágio, colaborações e novos desafios em desenvolvimento.",
-        footer: "© 2026 Miguel Oliveira. Projetado e desenvolvido com atenção aos detalhes.",
+        contactOverline: "Contato",
+        contactTitle: "Quer conversar sobre uma vaga ou projeto?",
+        contactText: "Pode me chamar por e-mail ou por uma das redes abaixo. Vou gostar de conversar.",
+        footer: "© 2026 Miguel Oliveira. Feito por mim, em Taubaté.",
         backTop: "Voltar ao topo",
         gsplanDetail: "Plataforma de gestão patrimonial que organiza a vida financeira de pessoas e empresas em um único ecossistema. A experiência reúne Bússola financeira, orçamento, planejamento, seguros, patrimônio, investimentos e painéis executivos, transformando dados complexos em decisões claras.",
         personalDetail: "Uma plataforma de organização pessoal que reúne dinheiro, estudos e rotina em uma visão simples. O dashboard acompanha saldo, receitas, despesas, assinaturas e transações; a área de estudos combina Pomodoro, meta semanal, matérias, conteúdos e prazos para ajudar o usuário a decidir o próximo passo e seguir o dia com foco.",
         scopeDetail: "Sistema completo de gerenciamento de requisitos para analisar, aprovar e acompanhar propostas de software. O painel reúne indicadores, workflow de aprovação, projetos vinculados, métricas e rastreabilidade das decisões.",
         realimentaDetail: "Projeto de extensão focado no combate à insegurança alimentar. A plataforma conecta instituições com alimentos excedentes a ONGs cadastradas, facilitando o registro, a visualização e a logística das doações.",
-        emotorsDetail: "Plataforma web de vendas de motocicletas que simula um marketplace digital. O usuário pode navegar pelo catálogo, consultar detalhes dos modelos e gerenciar itens em um carrinho responsivo.",
+        vyzorDetail: "O Vyzor é uma plataforma de gestão e análise de dados empresariais. Ele reúne dashboards por área, indicadores, metas, relatórios, importação de dados e um assistente virtual. No back-end, o projeto trabalha com autenticação, isolamento de dados por cliente, tarefas agendadas e integrações externas.",
         openLiveProject: "Abrir projeto online"
     },
     en: {
@@ -135,54 +136,55 @@ const translations = {
         resume: "Résumé",
         availability: "Open to opportunities",
         hello: "Hi, I'm Miguel.",
-        heroLine1: "I turn ideas into",
-        heroLine2: "digital experiences.",
-        heroDescription: "Full Stack Developer and Systems Analysis and Development student, building functional, intuitive and visually distinctive web products.",
+        heroLine1: "I learn by building.",
+        heroLine2: "And I care about building well.",
+        heroDescription: "I study Systems Analysis and Development at SENAI in Taubaté. This portfolio brings together the projects I have been building to learn front end, back end and practical problem solving.",
         viewProjects: "View my projects",
         talkToMe: "Let's talk",
         projectsBuilt: "projects built",
         certificates: "certifications",
         graduation: "expected graduation",
         profileCaption: "Code, product &amp; design",
-        aboutOverline: "Who I am",
-        aboutTitle: "Curious by nature.<br>A developer by choice.",
-        aboutLead: "I enjoy turning complex problems into interfaces that are simple, useful and pleasant to use.",
-        aboutText: "I study Systems Analysis and Development at SENAI Taubaté and hold a technical diploma in the same field. I am looking for my first professional opportunity to contribute to real projects, learn from an experienced team and grow as a developer.",
+        roleCaption: "Full Stack Developer in training",
+        aboutOverline: "About me",
+        aboutTitle: "A little about me",
+        aboutLead: "I am still at the beginning of my career, so I try to use every project to learn something new and improve what I already know.",
+        aboutText: "I completed a technical course in Systems Analysis and Development and now continue my degree at SENAI Taubaté. I like getting hands-on, understanding the problem before coding and seeing an idea take shape on the screen.",
         teamwork: "Teamwork",
         continuousLearning: "Continuous learning",
         systemThinking: "Systems thinking",
         toolbox: "My toolbox",
         stackTitle: "Technologies I use",
-        projectsOverline: "Selected work",
-        projectsTitle: "Projects where idea,<br>code and purpose meet.",
-        projectsNote: "Explore each case or open the published projects.",
-        gsplanSummary: "A financial and wealth management ecosystem combining budgets, planning, investments, insurance and executive insights in one integrated experience.",
-        personalSummary: "A personal hub for finances, routines and studies. It turns scattered information into a clear daily view with focus, goals and next steps.",
+        projectsOverline: "What I have built",
+        projectsTitle: "Projects I have brought to life",
+        projectsNote: "Each one represents a different stage in my learning.",
+        gsplanSummary: "A financial and wealth management project with areas for budgeting, planning, investments, insurance and asset tracking.",
+        personalSummary: "A personal dashboard for organizing money, studies and routines in one place, without switching between several tools.",
         viewCase: "View full project",
         visitSite: "Visit website",
         scopeTag: "Requirements management and traceability",
         realimentaTag: "Technology against food waste",
-        emotorsTag: "Motorcycle marketplace",
-        journeyOverline: "Education &amp; growth",
-        journeyTitle: "Building a foundation<br>to keep going further.",
+        vyzorTag: "Business data and KPI management",
+        journeyOverline: "What I studied",
+        journeyTitle: "My education so far",
         inProgress: "In progress",
         completed: "Completed",
         higherEducation: "Degree in Systems Analysis and Development",
         technicalEducation: "Technical Diploma in Systems Analysis and Development",
         highSchool: "High School",
-        certsOverline: "Continuous learning",
-        certsTitle: "Certifications that<br>expand my perspective.",
+        certsOverline: "Other studies",
+        certsTitle: "Courses and certifications",
         certsNote: "Select a certificate to view it.",
-        contactOverline: "Shall we build something together?",
-        contactTitle: "A good idea starts<br>with a conversation.",
-        contactText: "I am open to internship opportunities, collaborations and new development challenges.",
-        footer: "© 2026 Miguel Oliveira. Designed and developed with attention to detail.",
+        contactOverline: "Contact",
+        contactTitle: "Want to talk about an opportunity or a project?",
+        contactText: "Send me an email or reach me through one of the links below. I will be happy to talk.",
+        footer: "© 2026 Miguel Oliveira. Made by me in Taubaté.",
         backTop: "Back to top",
         gsplanDetail: "A wealth management platform that organizes personal and business finances in one ecosystem. The experience brings together financial guidance, budgeting, planning, insurance, assets, investments and executive dashboards, turning complex data into clear decisions.",
         personalDetail: "A personal organization platform combining money, studies and routines in a simple view. Its dashboard tracks balances, income, expenses, subscriptions and transactions; the study area combines Pomodoro, weekly goals, subjects, content and deadlines to help users choose the next step and move through the day with focus.",
         scopeDetail: "A complete requirements management system for analyzing, approving and tracking software proposals. Its dashboard combines indicators, approval workflows, linked projects, metrics and decision traceability.",
         realimentaDetail: "An outreach project focused on fighting food insecurity. The platform connects institutions with surplus food to registered NGOs, making donation registration, visibility and logistics easier.",
-        emotorsDetail: "A motorcycle sales platform that simulates a digital marketplace. Users can browse the catalogue, see model details and manage items in a responsive shopping cart.",
+        vyzorDetail: "Vyzor is a business data management and analytics platform. It brings together department dashboards, KPIs, goals, reports, data imports and a virtual assistant. Its back end handles authentication, tenant data isolation, scheduled tasks and external integrations.",
         openLiveProject: "Open live project"
     }
 };
@@ -367,115 +369,15 @@ const initReveal = () => {
     elements.forEach((element) => observer.observe(element));
 };
 
-const initPointerEffects = () => {
-    const canHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
-    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    if (!canHover || reducedMotion) return;
-
-    document.querySelectorAll("[data-tilt]").forEach((card) => {
-        card.addEventListener("pointermove", (event) => {
-            const bounds = card.getBoundingClientRect();
-            const x = (event.clientX - bounds.left) / bounds.width - 0.5;
-            const y = (event.clientY - bounds.top) / bounds.height - 0.5;
-            card.style.transform = `perspective(1400px) rotateX(${y * -1.8}deg) rotateY(${x * 1.8}deg)`;
+const initBackTop = () => {
+    document.querySelectorAll('a[href="#inicio"], .back-top').forEach((link) => {
+        link.addEventListener("click", (event) => {
+            event.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
         });
-        card.addEventListener("pointerleave", () => {
-            card.style.transform = "perspective(1400px) rotateX(0) rotateY(0)";
-        });
-    });
-
-    const orbit = document.getElementById("profile-orbit");
-    orbit?.addEventListener("pointermove", (event) => {
-        const bounds = orbit.getBoundingClientRect();
-        const x = (event.clientX - bounds.left) / bounds.width - 0.5;
-        const y = (event.clientY - bounds.top) / bounds.height - 0.5;
-        orbit.style.transform = `rotateX(${y * -5}deg) rotateY(${x * 7}deg)`;
-    });
-    orbit?.addEventListener("pointerleave", () => {
-        orbit.style.transform = "rotateX(0) rotateY(0)";
-    });
-};
-
-const initCanvas = () => {
-    const canvas = document.getElementById("bg-canvas");
-    const context = canvas?.getContext("2d");
-    if (!canvas || !context) return;
-
-    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    let width = 0;
-    let height = 0;
-    let particles = [];
-    let animationFrame = 0;
-
-    const createParticles = () => {
-        const amount = window.innerWidth < 700 ? 24 : 58;
-        particles = Array.from({ length: amount }, () => ({
-            x: Math.random() * width,
-            y: Math.random() * height,
-            vx: (Math.random() - 0.5) * 0.16,
-            vy: (Math.random() - 0.5) * 0.16,
-            radius: Math.random() * 1.1 + 0.35
-        }));
-    };
-
-    const resize = () => {
-        const pixelRatio = Math.min(window.devicePixelRatio || 1, 2);
-        width = window.innerWidth;
-        height = window.innerHeight;
-        canvas.width = width * pixelRatio;
-        canvas.height = height * pixelRatio;
-        canvas.style.width = `${width}px`;
-        canvas.style.height = `${height}px`;
-        context.setTransform(pixelRatio, 0, 0, pixelRatio, 0, 0);
-        createParticles();
-    };
-
-    const draw = () => {
-        context.clearRect(0, 0, width, height);
-        const isLight = document.documentElement.dataset.theme === "light";
-        const dotColor = isLight ? "rgba(46, 115, 255, 0.34)" : "rgba(122, 190, 255, 0.38)";
-        const lineColor = isLight ? "rgba(46, 115, 255, 0.055)" : "rgba(122, 190, 255, 0.07)";
-
-        particles.forEach((particle, index) => {
-            if (!reducedMotion) {
-                particle.x += particle.vx;
-                particle.y += particle.vy;
-                if (particle.x < -10 || particle.x > width + 10) particle.vx *= -1;
-                if (particle.y < -10 || particle.y > height + 10) particle.vy *= -1;
-            }
-
-            context.beginPath();
-            context.arc(particle.x, particle.y, particle.radius, 0, Math.PI * 2);
-            context.fillStyle = dotColor;
-            context.fill();
-
-            for (let otherIndex = index + 1; otherIndex < particles.length; otherIndex += 1) {
-                const other = particles[otherIndex];
-                const distance = Math.hypot(particle.x - other.x, particle.y - other.y);
-                if (distance > 135) continue;
-                context.beginPath();
-                context.moveTo(particle.x, particle.y);
-                context.lineTo(other.x, other.y);
-                context.strokeStyle = lineColor;
-                context.lineWidth = 1 - distance / 135;
-                context.stroke();
-            }
-        });
-
-        if (!reducedMotion) animationFrame = requestAnimationFrame(draw);
-    };
-
-    resize();
-    draw();
-    window.addEventListener("resize", resize, { passive: true });
-    document.addEventListener("visibilitychange", () => {
-        if (reducedMotion) return;
-        if (document.hidden) {
-            cancelAnimationFrame(animationFrame);
-        } else {
-            cancelAnimationFrame(animationFrame);
-            draw();
-        }
     });
 };
 
@@ -485,7 +387,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initMobileMenu();
     initDialogs();
     initReveal();
-    initPointerEffects();
-    initCanvas();
+    initBackTop();
     refreshIcons();
 });
+
