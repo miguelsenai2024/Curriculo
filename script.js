@@ -61,7 +61,13 @@ const certificadosData = [
         instituicao: "Cisco Networking Academy",
         ano: "2026",
         imagem: "Img/DataAnalyticsEssentialsUpdate20260531-31-rj9b4k.pdf"
-    }
+    },
+    {
+        titulo: { "pt-BR": "AWS Academy Graduate Cloud Foundations Training Badge", en: "AWS Academy Graduate Cloud Foundations Training Badge" },
+        instituicao: "AWS Academy",
+        ano: "2026",
+        imagem: "Img/MiguelOA_26179933_Agosto.pdf"
+    },
 ];
 
 const translations = {
