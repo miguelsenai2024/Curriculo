@@ -1,37 +1,44 @@
-# Portfólio Miguel Oliveira 🚀
+# Portfólio Miguel Oliveira
 
-Bem-vindo ao repositório do meu portfólio pessoal! Este projeto foi desenvolvido para apresentar minha trajetória acadêmica, habilidades técnicas e os principais projetos que desenvolvi como Desenvolvedor Full Stack.
+Portfólio pessoal de Miguel Oliveira, desenvolvedor Full Stack em formação (Análise e Desenvolvimento de Sistemas, SENAI Taubaté).
 
-## 💻 Sobre o Projeto
+👉 **[Acessar o portfólio](https://curriculo-ten-hazel.vercel.app/)**
 
-Este portfólio é uma aplicação web responsiva e interativa, com alternância de idiomas (Português/Inglês), temas (Claro/Escuro) e animações utilizando `Three.js` para o plano de fundo.
+## Sobre o projeto
 
-### 🛠️ Tecnologias Utilizadas
+O site funciona como uma apresentação em slides de tela cheia: a cada rolagem, o conteúdo atual sobe e some e o próximo entra, com uma foto de fundo própria para cada parte.
 
-- **HTML5**: Estruturação semântica.
-- **CSS3**: Estilização moderna, responsividade e variáveis de tema (claro/escuro).
-- **JavaScript (Vanilla)**: Lógica de interação, internacionalização (i18n) e gerenciamento de modais.
-- **Three.js**: Renderização de partículas 3D interativas no background.
+- **Início**: apresentação.
+- **01 · Sobre**: quem sou, como trabalho e as tecnologias que uso.
+- **02 · Sobre mim**: minha história, do esporte de alto rendimento ao desenvolvimento.
+- **03 · Projetos**: GSPlan e PersonalHub, com uma demonstração animada das telas.
+- **04 · Formação**, **05 · Certificações** e **06 · Contato**.
 
-## 🚀 Projetos em Destaque
+## Tecnologias
 
-- **E-Motors**: Plataforma de e-commerce automotivo com design de alta performance.
-- **ReAlimenta**: App focado no combate ao desperdício alimentar, conectando doadores a ONGs.
-- **GSPlan**: Plataforma de Gestão Patrimonial (*Wealth Management*) para assessores de elite.
-- **ScopeMaster**: Sistema de gerenciamento de requisitos para análise e acompanhamento de propostas (Projeto Integrador).
+- **HTML5** semântico.
+- **CSS3**: tema escuro com dourado, animações em `transform`/`opacity`, layout responsivo.
+- **JavaScript puro**: navegação por slides (roda do mouse, teclado, toque e links) e demonstração dos projetos.
 
-## ⚙️ Funcionalidades
+Sem dependências nem etapa de build. Sem JavaScript, o site vira uma página comum de rolagem, e quem prefere menos movimento (`prefers-reduced-motion`) vê transições só com fade.
 
-- **Tema Dinâmico**: Alternância de tema (Dark/Light mode) com estado salvo no navegador.
-- **Internacionalização (i18n)**: Suporte a múltiplos idiomas (PT/EN).
-- **Modais Interativos**: Visualização detalhada dos projetos com galeria de imagens imersiva.
-- **Totalmente Responsivo**: Layout fluido para excelente visualização em dispositivos móveis e desktops.
+## Rodando localmente
 
-## 🌐 Acesse Online
+```bash
+python -m http.server 5500
+```
 
-O projeto está hospedado e disponível online:
+Depois abra `http://localhost:5500`.
 
-👉 **[Acessar o Portfólio (Vercel)](https://curriculo-ten-hazel.vercel.app/)**
+## Estrutura
+
+```
+index.html, style.css, script.js   site
+Img/fotos/                         fotos de fundo
+Img/GSPlan/, Img/PersonalHub/      telas dos projetos
+Img/certificados/ e Img/*.pdf      certificados
+dist/client/                       cópia do site publicada pela hospedagem em dist/server
+```
 
 ---
-*Desenvolvido com 💙 por [Miguel Oliveira](https://github.com/Miguelsenai2024).*
+*Desenvolvido por [Miguel Oliveira](https://github.com/Miguelsenai2024).*
